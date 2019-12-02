@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Interactive video with HTML5 & JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive video</h1>
+  <div class="videos">
+    <!-- start video  -->
+    <section class="active initial closing">
+      <video autoplay="autoplay" loop>
+        <source src="/videos/video-sky.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- cat video  -->
+    <section class="cat hide">
+      <video>
+        <source src="/videos/video-cat.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- dog video  -->
+    <section class="dog hide">
+      <video>
+        <source src="/videos/video-dog.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- play button -->
+    <img class="play" src="play.svg" alt="play button">
+  
+    <section class="menu hide">
+      <div class="menu-wrapper">
+        <div class="initial hide">
+            <h4>Watch a cat or a dog video?</h2>
+        </div>
+        <div class="closing hide">
+          <h4>Would you like to choose a different video now?</h4>
+        </div>
+        <div class="options hide">
+          <ul>
+            <li><a id="cat-person">A cat video!</a></li>
+            <li><a id="dog-person">A dog video!</a></li>
+          
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script type="text/javascript"src="index.js"></script>
+</body>
+
+</html>

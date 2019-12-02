@@ -1,0 +1,94 @@
+body {
+	font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 110%;
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+.initial {
+	display: block;
+}
+
+.videos {
+	position: relative;
+	max-width: 700px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.videos video {
+	max-width: 100%;
+	height: auto;
+}
+
+.play {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	height: 98%;
+	padding: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.play:hover .fil1 {
+	fill: #fff;
+	width: 50%;
+}
+
+.menu {
+	height: 98%;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.menu,
+.menu-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -51%);
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu,
+.menu a {
+	color: #fff;
+}
+
+.menu a:hover {
+	cursor: pointer;
+}
+
+.menu ul li {
+	list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.menu ul li {
+		display: inline-block;
+		margin-right: 30px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.show-below-450 {
+		display: block !important;
+		color: red;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
